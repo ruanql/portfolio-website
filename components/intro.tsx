@@ -59,7 +59,7 @@ export default function Intro() {
         <span className="font-bold"> full-stack developer</span> with 
         <span className="font-bold"> 6 years</span> of experience. I enjoy 
         building <span className="italic">sites & apps</span>. My focus is {" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="underline">React (Next.js) and Node.js</span>.
       </motion.h1>
 
       <motion.div
@@ -82,10 +82,10 @@ export default function Intro() {
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 
-          rounded-full outline-none focus:scale-105 hover:scale-105 
-          active:scale-105 transition"
-          href="/CV.pdf"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full 
+          outline-none focus:scale-110 hover:scale-110 active:scale-105 
+          transition cursor-pointer borderBlack dark:bg-white/10"
+          href="/Software_Engineer_Ruan.pdf"
           download
         >
           Download CV{" "}
@@ -94,7 +94,9 @@ export default function Intro() {
 
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex 
-          items-center gap-2 rounded-full"
+          items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] 
+          active:scale-105 transition cursor-pointer borderBlack 
+          dark:bg-white/10 dark:text-white/60"
           href="https://linkedin.com/in/ruanqueiroz"
           target="_blank"
         >
@@ -103,7 +105,9 @@ export default function Intro() {
 
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 
-          flex items-center gap-2 text-[1.35rem] rounded-full"
+          flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] 
+          hover:scale-[1.15] active:scale-105 transition cursor-pointer 
+          borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://github.com/ruanql"
           target="_blank"
         >

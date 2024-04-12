@@ -2,3 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #e5e7eb;
+  border-radius: 14px;
+}
+
+html {
+    --line-color: #e5e7eb;
+    scroll-behavior: smooth;
+  }
+  
+  html.dark {
+    --line-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .borderBlack {
+    @apply border border-black/10;
+  }
