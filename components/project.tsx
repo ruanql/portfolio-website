@@ -6,7 +6,9 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { BsArrowUpRight } from "react-icons/bs";
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = (typeof projectsData)[number] & {
+  url?: string;
+};
 
 export default function Project({
   title,
