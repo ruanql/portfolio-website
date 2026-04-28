@@ -97,7 +97,7 @@ export default function Intro() {
           items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] 
           active:scale-105 transition cursor-pointer borderBlack 
           dark:bg-white/10 dark:text-white/60"
-          href="https://linkedin.com/in/ruanqueiroz"
+          href="https://www.linkedin.com/in/ruanqueiroz/"
           target="_blank"
         >
           <BsLinkedin />

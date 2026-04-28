@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { BsArrowUpRight } from "react-icons/bs";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -12,6 +13,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  url,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -32,11 +34,24 @@ export default function Project({
     >
       <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <h3 className="text-2xl font-semibold">{title}</h3>
+          <div className="flex items-center justify-between mb-2">
+            <h3 className="text-2xl font-semibold">{title}</h3>
+            {url && (
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors"
+                aria-label={`Visit ${title} project`}
+              >
+                <BsArrowUpRight className="text-xl" />
+              </a>
+            )}
+          </div>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto" role="list" aria-label="Technologies used">
             {tags.map((tag, index) => (
               <li
                 className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
@@ -50,7 +65,7 @@ export default function Project({
 
         <Image
           src={imageUrl}
-          alt="Project I worked on"
+          alt={`Screenshot of ${title} project`}
           quality={95}
           className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
         transition 

@@ -17,6 +17,10 @@
   border-radius: 14px;
 }
 
+html.dark *::-webkit-scrollbar-thumb {
+  background-color: #374151;
+}
+
 html {
     --line-color: #e5e7eb;
     scroll-behavior: smooth;

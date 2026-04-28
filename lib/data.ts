@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import { time } from "console";
 
 export const links = [
   {
@@ -35,28 +36,52 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Senior Software Engineer",
+    location: "Luizalabs, São Paulo, SP",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Focus on system scalability and performance, optimizing code and choosing appropriate tools and architectures to support growing demand. Develop and implement monitoring and diagnostic systems to anticipate and resolve issues, including real-time monitoring, metrics, and logging tools. Lead incident response, identifying root causes and developing solutions to prevent recurrence. Collaborate closely with software development, operations, and security teams to ensure system reliability, security, and scalability.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "mai 2024 - Atual",
+  },
+  {
+    title: "Senior Software Engineer",
+    location: "Datum, Porto Alegre, RS",
+    description:
+      "Desenvolvimento Full Stack de aplicações web para o cliente Getnet pagonext. Implementação de features avançadas usando Node, Typescript, React, MaterialUI, BFF, TDD, Microservices, Jenkins e Git Flow.",
+    icon: React.createElement(CgWorkAlt),
+    date: "mai 2023 - abr 2024",
+  },
+  {
+    title: "Software Developer",
+    location: "Amdocs, São Carlos, SP",
+    description:
+      "Desenvolvimento de produtos digitais e aplicações web de alta qualidade usando React, Redux, Vue.js, SASS, Node.js, Typescript, integração de APIs, automação de testes (Cypress), CI/CD e metodologias ágeis.",
+    icon: React.createElement(FaReact),
+    date: "jun 2021 - mai 2023",
+  },
+  {
+    title: "Frontend Developer",
+    location: "Agência Poussée, São Paulo, SP",
+    description:
+      "Desenvolvimento de produtos digitais com HTML, CSS, JavaScript, React, Vue, PHP e Wordpress. Trabalho em equipe com designers e PMs, acessibilidade, SEO, Google Analytics e versionamento com Git.",
+    icon: React.createElement(CgWorkAlt),
+    date: "mai 2019 - mai 2021",
+  },
+  {
+    title: "Full Stack Developer (Freelancer)",
+    location: "São Paulo, SP",
+    description:
+      "Criação de landing pages, páginas web, chatbots, email marketing, manutenção de SEO, desenvolvimento de interfaces e uso de plataformas cloud (AWS, Azure, Google Cloud).",
+    icon: React.createElement(FaReact),
+    date: "mai 2018 - abr 2019",
+  },
+  {
+    title: "Intern",
+    location: "Agência João de Barro, Brotas, SP",
+    description:
+      "Estágio em desenvolvimento frontend, criação de landing pages, formulários, chatbots e email marketing. Aprimoramento de habilidades em programação e novas tecnologias.",
+    icon: React.createElement(LuGraduationCap),
+    date: "ago 2017 - jan 2018",
   },
 ] as const;
 
