@@ -141,7 +141,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📞 Contact
 
-- **Email**: ruan@example.com
+- **Email**: ruanqzlt@gmail.com
 - **LinkedIn**: [Ruan Queiroz](https://linkedin.com/in/ruanqueiroz)
 - **GitHub**: [@ruanql](https://github.com/ruanql)
 

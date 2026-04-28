@@ -16,8 +16,8 @@ export default function Contact() {
       <SectionHeading>Contact Me</SectionHeading>
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
-        <a className="underline" href="mailto:ruan@example.com">
-          ruan@example.com
+        <a className="underline" href="mailto:ruanqzlt@gmail.com">
+          ruanqzlt@gmail.com
         </a>{" "}
         or through this form.
       </p>
@@ -69,7 +69,7 @@ export default function Contact() {
           items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] 
           active:scale-105 transition cursor-pointer borderBlack 
           dark:bg-white/10 dark:text-white/60"
-          href="mailto:ruan@example.com"
+          href="mailto:ruanqzlt@gmail.com"
           target="_blank"
         >
           <MdEmail />

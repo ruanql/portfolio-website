@@ -5,22 +5,22 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Ruan | Personal Portfolio",
+  title: "Ruan | Software Engineer | Portfolio",
   description:
-    "Ruan Queiroz Leite is a Full stack Software Engineer with 6+ years of experience",
+    "Ruan Queiroz Leite is a Full stack Software Engineer with 8+ years of experience",
   keywords: ["Full Stack Developer", "React", "Next.js", "Node.js", "TypeScript", "Portfolio"],
   authors: [{ name: "Ruan Queiroz Leite" }],
   creator: "Ruan Queiroz Leite",
   openGraph: {
-    title: "Ruan | Personal Portfolio",
-    description: "Full stack Software Engineer with 6+ years of experience",
+    title: "Ruan | Software Engineer | Portfolio",
+    description: "Full stack Software Engineer with 8+ years of experience",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ruan | Personal Portfolio",
-    description: "Full stack Software Engineer with 6+ years of experience",
+    title: "Ruan | Software Engineer | Portfolio",
+    description: "Full stack Software Engineer with 8+ years of experience",
   },
 };
 
