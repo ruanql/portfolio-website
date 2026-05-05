@@ -7,10 +7,15 @@ import ScrollToTop from "@/components/scroll-to-top";
 import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
 import ThemeToggle from "@/components/theme-toggle";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center px-4">
+      <Analytics />
+      <SpeedInsights />
       <Intro />
       <SectionDivider />
       <About />
